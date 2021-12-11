@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html ng-app="app" ontouchmove>
+
+<!-- Mirrored from donbradmanthelegend.neocities.org/biography/don.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 Oct 2021 04:37:43 GMT -->
+<head>
+<meta charset="UTF-8">
+<meta name="theme-color" content="#008542" />
+<meta name="apple-mobile-web-app-title" content="Medicare" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<title>Medicare</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale = 1.0, user-scalable=no, viewport-fit=cover">
+<link rel="shorcut icon" type="image/jpeg" href="thing1.jpg">
+<link rel="icon" type="image/jpeg" sizes="32x32" href="thing1.jpg" />
+<link rel="icon" type="image/jpeg" sizes="48x48" href="thing1.jpg" />
+<link rel="icon" type="image/jpeg" sizes="57x57" href="thing1.jpg" />
+<link rel="icon" type="image/jpeg" sizes="76x76" href="thing1.jpg" />
+<link rel="icon" type="image/jpeg" sizes="96x96" href="thing1.jpg" />
+<link rel="icon" type="image/jpeg" sizes="128x128" href="thing1.jpg" />
+<link rel="icon" type="image/jpeg" sizes="144x144" href="thing1.jpg" />
+<link rel="icon" type="image/jpeg" sizes="192x192" href="thing1.jpg" />
+<link rel="icon" type="image/jpeg" sizes="196x196" href="thing1.jpg" />
+<link rel="icon" type="image/jpeg" sizes="228x228" href="thing1.jpg" />
+<link rel="apple-touch-icon" sizes="120x120" href="thing1.jpg" />
+<link rel="apple-touch-icon" sizes="152x152" href="thing1.jpg" />
+<link rel="apple-touch-icon" sizes="167x167" href="thing1.jpg" />
+<link rel="apple-touch-icon" sizes="180x180" href="thing1.jpg" />
+<style>
+
+.text-monospace {
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !important;
+}
+
+.text-justify {
+  text-align: justify !important;
+}
+
+.text-wrap {
+  white-space: normal !important;
+}
+
+.text-nowrap {
+  white-space: nowrap !important;
+}
+
+.text-truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.text-left {
+  text-align: left !important;
+}
+
+.text-right {
+  text-align: right !important;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+@media (min-width: 576px) {
+  .text-sm-left {
+    text-align: left !important;
+  }
+  .text-sm-right {
+    text-align: right !important;
+  }
+  .text-sm-center {
+    text-align: center !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .text-md-left {
+    text-align: left !important;
+  }
+  .text-md-right {
+    text-align: right !important;
+  }
+  .text-md-center {
+    text-align: center !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .text-lg-left {
+    text-align: left !important;
+  }
+  .text-lg-right {
+    text-align: right !important;
+  }
+  .text-lg-center {
+    text-align: center !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  .text-xl-left {
+    text-align: left !important;
+  }
+  .text-xl-right {
+    text-align: right !important;
+  }
+  .text-xl-center {
+    text-align: center !important;
+  }
+}
+
+.text-lowercase {
+  text-transform: lowercase !important;
+}
+
+.text-uppercase {
+  text-transform: uppercase !important;
+}
+
+.text-capitalize {
+  text-transform: capitalize !important;
+}
+
+.font-weight-light {
+  font-weight: 300 !important;
+}
+
+.font-weight-lighter {
+  font-weight: lighter !important;
+}
+
+.font-weight-normal {
+  font-weight: 400 !important;
+}
+
+.font-weight-bold {
+  font-weight: 700 !important;
+}
+
+.font-weight-bolder {
+  font-weight: bolder !important;
+}
+
+.font-italic {
+  font-style: italic !important;
+}
+
+
+span {
+    font-size: 20px;
+    display: inline-block;
+}
+
+span.lower{ transform: scaleY(0.9); }
+span.taller { transform: scaleY(1.05); }
+
+/** extra light */
+@font-face {
+  font-family: "GalanoGrotesque";
+  src: url("fonts/coolfont.ttf") format("truetype");
+  font-weight: lighter;
+  font-style: normal;
+}
+/** light */
+@font-face {
+  font-family: "GalanoGrotesque";
+  src: url("fonts/coolfont.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+/** normal */
+@font-face {
+  font-family: "GalanoGrotesque";
+  src: url("fonts/coolfont.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+/** Medium */
+@font-face {
+  font-family: "GalanoGrotesque";
+  src: url("fonts/coolfont.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+/** Bold */
+@font-face {
+  font-family: "GalanoGrotesque";
+  src: url("fonts/SFProDisplay-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+/** semi-bold**/
+@font-face {
+  font-family: "GalanoGrotesque";
+  font-style: normal;
+  font-weight: 600;
+  src: url("fonts/SFProDisplay-Medium.ttf") format("truetype");
+}
+
+body{margin:0 0px;line-height:1.4;font-family:GalanoGrotesque;max-width:600px;padding-top:env(safe-area-inset-top);}
+.main{margin:16px;margin-top:40px}
+.headbar{
+  width: 100%;
+  background: #f;
+  padding: ;z-index:1000;
+  display: flex;color:#060000;font-family:GalanoGrotesque;font-size:14px;padding:5px;padding-left:0px;position:fixed;top:auto;align-items: center;justify-content: center;}
+.arrow {float:left;height:60%;bottom:10%;position:absolute;left:10px;top:7px;}
+.headbar div{}
+body{margin:auto;font-family: GalanoGrotesque, Gilroy, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";}
+.savebutton{border-radius:4px;border:solid 1.25px #008542;text-align:center;padding:8px}
+.box{border:solid 1px #ccc;border-radius:6px;margin-bottom:12px;margin-top:40px;margin-left: 5px;margin-right: 5px;overflow:hidden;box-shadow:0px 0px 3px 1px #ccc}
+.box2{border:solid 1px transparent;border-radius:6px;margin-bottom:12px;overflow:hidden;}
+.tophalf{background:#038456;color:#fff;height:185px;border-top-left-radius:6px;border-top-right-radius:6px;
+background-image:url("thing6.png");background-position:center top;background-size:34% auto;background-repeat:no-repeat;vertical-align:bottom;position:relative;
+background-position:center 12%;border-color:transparent;
+
+}
+
+.bottomhalf{padding:10px;padding-bottom:4px;background-color:#f2f2f2;background-image:url("thing100.png");background-size:240px;background-repeat:no-repeat;background-position:center 22px}
+.bottomhalf{filter:brightness(1.05);margin-top:2px}
+.bottom-field{margin-bottom:12px;margin-left:6px;line-height: 160%}
+.bottom-field2{margin-bottom:0px;margin-left:6px;margin-top:16px;line-height: 130%}
+.bottom-descriptor{color:#aaa;font-size:13.4px}
+.bottom-value{font-size:18px}
+// .auslogo{margin:2% 30%;width:40%}
+.tick{float:right;height:38%;bottom:10%;position:absolute;right:15px}
+.tick2{background-size:250px;background-repeat:no-repeat;background-position:center center}
+.descriptor{font-size:14px;font-weight:400;}
+.disclaimer{font-size:17px;font-weight:700;text-align:center;line-height: 110%;}
+.cov-dig-large5{font-size:17px;font-weight:600;padding-top:4px;background-position:center 50%;}
+.info{font-size:29px;font-weight:500;}
+.info2{font-size:20px;font-weight:500;}
+.clock{font-family:GalanoGrotesque;color:#e1e1e1;text-align:center;font-size:15px;margin-top:12px;margin-bottom:20px;font-weight:400;}
+.applewallet{width:55%;margin:12px auto;display:block}
+.bottom-details{margin-bottom:14px}
+.cov-dig{margin-left:20px;margin-top:auto;bottom:10%;position:absolute;font-weight:400;}
+ .center {
+  margin: auto;
+  width: 80%;
+  border: 3px solid green;
+  padding: 20px;
+  background-color: #0c874a;
+}
+.qr{height:250px;display: block;
+  margin-left: auto;
+  margin-right: auto;border-color:transparent;background-size:100% auto}
+.cov-dig-large{font-size:30px}
+.cov-dig-small{font-size:20px;font-weight:300;margin-top: -7px;}
+.validfrom{color:#3c7d6e}
+.shareicon{height:22px;float:right;margin-right;4px}
+.req-text{background-image:url("thing101.png");box-sizing: border-box;background-size:110% auto;background-repeat:no-repeat;background-position:center center}}
+.anusrape{margin-top:50px;background-color: transparent;margin-bottom:50px;}
+.fuckface{margin-top:50px;margin-bottom:50px;height:200px;background-image:url("thing101.png");background-size:100%;background-repeat:no-repeat;background-position:center center}
+.fuckoff{font-family:GalanoGrotesque;color:#707378;text-align:center;float:bottom;font-size:12px;margin-top:30px;margin-bottom:40px;font-weight:600;}
+.fuckoff2{font-family:GalanoGrotesque;color:#707378;background-color:transparent;text-align:center;float:bottom;font-size:10px;margin-top:80px;margin-bottom:50px;font-weight:30000;}
+.dansbuttplug{height:100%;background-image:url("thing101.png");background-size:80% auto;background-repeat:no-repeat;background-position:center bottom}
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+}
+.link{
+text-decoration: underline;color:#3b4a60;font-weight:500;}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  font-size: 20px;
+  height: auto;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.modal-content input, select {
+  display:inline-block;
+  height:40px;
+  width: calc(100% - 8px);
+  margin-bottom: 4px;
+}
+
+.modal-content .date-field{
+  width: 29%
+}
+
+
+
+.applewallet-body{position:fixed;width:100%;height:100%;background:#fff;z-index:2000;left:0;top:0;padding:16px}
+.applewallet-card{border-radius:8px;background:#007532;width:calc(100% - 32px);height:400px}
+
+
+</style>
+
+
+</head>
+<body onload="startTime()">
+  <div class="headbar" id="header"><div class="arrow"><img src="arrow.png" class="arrow" /></div>
+    <div class="cov-dig-large5">
+      COVID-19 digital certificate</div>
+  </div>
+<div class="main">
+
+<noscript>
+<h2>This site doesn't work without Javascript, you'll need to turn it on for this site</h2>
+</noscript>
+
+<div id="myModal" class="modal">
+<div class="modal-content">
+<h2 style="margin-top:0px">Welcome to the Cert Generator. Courtesy of Anonymous Australia. We are Legion.</h2>
+<p>Please input the data needed to make the pass here. All personal data
+ is stored on your device and kept offline. No personal data is
+transmitted/collected to this App or anywhere else outside your device.
+Please save and follow <a href="https://gab.com/mylilanon">https://gab.com/mylilanon</a>for
+ updates and links to other sites in event this goes down.(Click and
+hold to copy and paste text as app is locked down and isolated so no
+links work)<b>Scroll to end and read everything first!</b>  </p>
+<p>
+<b>First & Last Name ***IN CAPITALS***</b><br/> <input id="generate-name" type="text" />
+</p>
+<p>
+<b>Date of Birth Put 0s in front of single numbers! put in Numbers only no words!</b><br/> <input type="text" class="date-field" id="generate-dob-dd" size="4" placeholder="Day" />
+<input type="text" size="10" class="date-field" id="generate-dob-mm" placeholder="Month # (1-12)" />
+<input type="text" size="4" class="date-field" id="generate-dob-yy" placeholder="Year" />
+</p>
+<p>
+<b>Valid From Put 0s in front of single numbers! put in Numbers only no words!</b><br/> <input type="text" size="4" class="date-field" id="generate-dd1-dd" placeholder="Day" />
+<input type="text" size="10" class="date-field" id="generate-dd1-mm" placeholder="Month # (1-12)" />
+<input type="text" size="4" class="date-field" id="generate-dd1-yy" placeholder="Year" />
+</p>
+<p>
+
+<p>
+
+<div id="generate-vax">
+</div></p>
+<p>
+<button id="generate-button">Generate</button>
+</p>
+<h2>Read me before you press generate</h2>
+<ul>
+<li>Make sure your dose dates add up. Remember, 12 weeks between AZ and 5 (give or take 1) between Pfizer. <i>(No Australian data on Moderna interval yet but some
+sources from overseas are saying 28 days)</i></li>
+<li>If you want to reset the data you have to uninstall the app and reinstall it.</li>
+<li>The info you put in the app will stay there until you delete the app.</li>
+<li><b>In regards to the IHI number</b> you can access it via your mygov. By default it just puts a random one in there but I suggest putting your actual
+in there just in case</li>
+</ul>
+<h2>This will act like the app and save the details once you click Generate!</h2>
+<p><b>If you need to reset or make a mistake delete the app icon and clear your browser history and cookies</b>
+Instructions for saving Website URL on your phone so it behaves like an app with the little icon and everything:
+
+Save it as App On Android:
+
+1. Launch “Chrome” app
+
+2. Open https://gladychannoeggs/qld (or relevant state url)
+
+3. Tap the menu icon (3 dots in upper right-hand corner) and tap "Add to Home Screen."
+
+4. You'll be able to enter a name for the shortcut and then Chrome will add it to your home screen.
+
+5. Open the service nsw/qld/vic app from your home screen.
+
+Get the app for iOS:
+
+1. Launch “Safari” app
+
+2. Open https://gladychannoeggs/qld (or relevant state url)
+
+3. Tap the share icon (the button at the center of the footer on the bottom) scroll and tap "Add to Homescreen."
+
+4. You'll be able to enter a name for the shortcut and then Safari will add the  app to your home screen.
+
+5. Open the app from your home screen.
+Everything we do will be given away free always but if you wish to
+donate you can do so here:
+
+</p><p><</p><p>Bitcoin(BTC):
+</p> <!-- The text field -->
+<input type="text" value="bc1qx4mya9dtur685rf9v0rey5rw0a8z0rfp4ph7q4" id="btc"><!-- The button used to copy the text -->
+<button onclick="one()">Copy text</button><script>
+function one() {
+  /* Get the text field */
+  var copyText = document.getElementById("btc");
+
+  /* Select the text field */
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); /* For mobile devices */
+
+  /* Copy the text inside the text field */
+  navigator.clipboard.writeText(copyText.value);
+
+  /* Alert the copied text */
+  alert("Copied the text: " + copyText.value);
+}
+</script><p></p><p>Monero(XMR):</p><input type="text" value="48iTErsqMuchcDJ4LPYrD5BcZiRfanhnZJeZ32Ts9yHTVgPpVujvapVCcPKUCyfYeoH4NV6kpsL2uY74Cz6ccop6Fukm2Zp" id="monero"><!-- The button used to copy the text -->
+<button onclick="two()">Copy text</button><script>
+function two() {
+  /* Get the text field */
+  var copyText = document.getElementById("monero");
+
+  /* Select the text field */
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); /* For mobile devices */
+
+  /* Copy the text inside the text field */
+  navigator.clipboard.writeText(copyText.value);
+
+  /* Alert the copied text */
+  alert("Copied the text: " + copyText.value);
+}
+// if the user selects copy
+case R.id.menu_copy:
+
+// Gets a handle to the clipboard service.
+ClipboardManager clipboard = (ClipboardManager)
+        getSystemService(Context.CLIPBOARD_SERVICE);
+</script><p>Ethereum(ETH): </p><input type="text" value="0x6E98CE6249F72d763635290A153Fc45aa5213530" id="eth">
+
+<!-- The button used to copy the text -->
+<button onclick="three()">Copy text</button><script>
+function three() {
+  /* Get the text field */
+  var copyText = document.getElementById("eth");
+
+  /* Select the text field */
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); /* For mobile devices */
+
+  /* Copy the text inside the text field */
+  navigator.clipboard.writeText(copyText.value);
+
+  /* Alert the copied text */
+  alert("Copied the text: " + copyText.value);
+}
+</script><p></p>
+  </div>
+
+</div>
+
+<div class="box">
+  <div class="tophalf">
+    <img src="thing22.gif" class="tick" />
+    <div class="cov-dig">
+      <div class="cov-dig-large">COVID-19</div>
+      <div class="cov-dig-small">digital certificate</div>
+    </div>
+  </div>
+  <div class="bottomhalf">
+    <div class="bottom-field">
+      <div class="descriptor">NAME</div>
+      <div class="info" id="text-name"></div>
+  </div>
+    <div class="bottom-field">
+      <div class="descriptor">DATE OF BIRTH</div>
+      <div class="info" id="text-dateofbirth"></div>
+    </div>
+    <div class="bottom-field2 validfrom">
+      <div class="descriptor">VALID FROM</div>
+      <div class="info2" id="text-validfrom"></div>
+    </div>
+
+    <div class="clock" id="txt"></div>
+    <div class="disclaimer">This individual has received all required COVID-19 vaccinations.</div>
+    </div>
+</div>
+
+</div>
+
+
+
+<script type="text/javascript">
+
+// Open the data entry box only if a data cookie has not yet been set
+if(localStorage.getItem("vxpdat") == null){
+  document.getElementById("myModal").style.display = "block";
+// Hide navigation bar if empty
+  document.getElementById("header").style.display = "none";
+}
+
+// Correspond month number to an abbreviated name
+const monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun",  "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+
+const dd = new Date();
+function startTime() {
+  const today = new Date(); // Create date object to power live clock
+  let h = today.getHours();    // Hours
+  let m = today.getMinutes();  // Minutes
+  let s = today.getSeconds();  // Seconds
+  let d = today.getDate();     // Day
+  let n = today.getMonth();    // Month
+  let y = today.getFullYear(); // Year
+  m = checkTime(m); // Add zero in front of digits under ten, like it should be on a clock
+  s = checkTime(s);
+  h = checkTime(h);
+  // Show live clock on screen
+  document.getElementById('txt').innerHTML =  d + " " + monthNames[dd.getMonth()] + " " + y + " " + h + ":" + m + ":" + s;
+  setTimeout(startTime, 1000); // Refresh clock once per second
+}
+function checkTime(i) {
+  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+  return i;
+}
+
+let cookiecontent = localStorage.getItem("vxpdat") + " "; // Fetch data from local storage
+// Some of this code refers to storing in cookies. Now it is in localstorage, due to iOS compatibility issues.
+let vpcont = cookiecontent.split(','); // Convert comma delimited string from local storage into an array
+let nm = vpcont[0]; // Name
+nm = nm.toUpperCase(); // Show name as upper case
+let monthindex = vpcont[2] - 1; // Because Javascript arrays start at zero, we have to offest by one so it matches right
+let monthindexd1 = vpcont[6] - 1;
+let monthindexd2 = vpcont[9] - 1;
+let datebirth = vpcont[1] + " " + monthNames[monthindex] + " " + vpcont[3]; // Date of birth
+let firstdose = vpcont[5] + " " + monthNames[monthindexd1] + " " + vpcont[7]; // Date of first dose
+let lastdose = vpcont[8] + " " + monthNames[monthindexd2] + " " + vpcont[10]; // Date of second dose
+let pickyourpoison = "";
+// Pick the correct vaccine name corresponding to the key which was saved.
+if(vpcont[4] == "AZ"){
+pickyourpoison = "COVID-19 Vaccine AstraZeneca";
+}
+else if(vpcont[4] == "PF"){
+pickyourpoison = "Pfizer Comirnaty";
+}
+else{
+// To do: find the proper name being used on the passes, this is just a rough guess.
+pickyourpoison = "Spikevax Moderna COVID-19 Vaccine";
+}
+
+// Show the clotshot data on screen as the descriptor, the interpunct (middle dot) and dose date
+let dose1text = pickyourpoison + " · " + firstdose;
+
+
+
+document.getElementById('text-dateofbirth').innerHTML = datebirth;
+document.getElementById('text-name').innerHTML = nm;
+document.getElementById('text-validfrom').innerHTML = firstdose;
+
+
+
+
+// Refer to the data entry screen as a shorter name for later access
+var modal = document.getElementById("myModal");
+
+
+// When the generate button is clicked on the menu, combine all added values
+// as a comma delimited string for storage
+var generatebutton = document.getElementById("generate-button");
+generatebutton.onclick = function(){
+  savethis = document.getElementById('generate-name').value.replace(/,/g, " ") + "," // Commas are filtered out to avoid breaking the data
+  + document.getElementById('generate-dob-dd').value + ","
+  + document.getElementById('generate-dob-mm').value + ","
+  + document.getElementById('generate-dob-yy').value + ","
+  + document.getElementById('generate-vax').value + ","
+  + document.getElementById('generate-dd1-dd').value + ","
+  + document.getElementById('generate-dd1-mm').value + ","
+  + document.getElementById('generate-dd1-yy').value + ","
+
+  // Pointy brackets would cause issues and break things so they are filtered out. There's no need to even enter them
+  // for this purpose anyway.
+  savethis = savethis.replace(/>/g, " ");
+  savethis = savethis.replace(/</g, " ");
+
+  // Save data array to a local storage item cached in the browser
+  localStorage.setItem("vxpdat", savethis);
+  // Hide the data entry screen
+  modal.style.display = "none";
+  // Refresh the screen to show the newly entered data
+  history.go(0);
+}
+
+</script>
+
+</body>
+
+<!-- Mirrored from donbradmanthelegend.neocities.org/biography/don.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 Oct 2021 04:37:45 GMT -->
+</html>
