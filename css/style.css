@@ -6955,7 +6955,7 @@ input {
 
 .checked-in {
   height: 100%;
-  padding: 40px 1rem 20px;
+  padding: 5px 1rem 20px;
   display: flex;
   flex-direction: column;
   background: #651726;
